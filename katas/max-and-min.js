@@ -1,5 +1,15 @@
-function max() {}
+function max(array) {
+    if(array.length === 0)
+        return 0;
+    
+    return Math.max(...array)
+}
 
-function min() {}
+function min(array) {
+    if(array.length === 0)
+        return 0;
+
+    return Math.min(...array)
+}
 
 module.exports = { max, min };
